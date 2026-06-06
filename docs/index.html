@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>The PM &amp; AI PM Handbook</title>
+  <meta name="description" content="A practical, mobile-first guide to modern product management and AI product management — 10 parts, 30 chapters, 2 glossaries." />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+  <meta property="og:title" content="The PM & AI PM Handbook" />
+  <meta property="og:description" content="A practical guide to product management and AI product management." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235e5ce6'/%3E%3Ctext x='50' y='71' font-size='62' text-anchor='middle' fill='white' font-family='-apple-system,sans-serif' font-weight='700'%3EP%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="progress" aria-hidden="true"></div>
+
+  <!-- top bar -->
+  <header id="topbar">
+    <button id="menu-btn" class="icon-btn" aria-label="Open navigation">
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+    </button>
+    <a class="brand" href="#home" aria-label="Home">
+      <span class="brand-mark">P</span>
+      <span class="brand-text">PM &amp; AI PM Handbook</span>
+    </a>
+    <div class="topbar-spacer"></div>
+    <button id="search-btn" class="search-trigger" aria-label="Search">
+      <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M21 21l-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <span class="search-label">Search</span>
+      <span class="kbd">⌘K</span>
+    </button>
+    <button id="theme-btn" class="icon-btn" aria-label="Toggle theme">
+      <svg class="ico-sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></g></svg>
+      <svg class="ico-moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 13.5A8.5 8.5 0 1110.5 3a6.6 6.6 0 1010.5 10.5z" fill="currentColor"/></svg>
+    </button>
+  </header>
+
+  <div id="backdrop" aria-hidden="true"></div>
+
+  <!-- sidebar -->
+  <aside id="sidebar" aria-label="Contents">
+    <a class="side-brand" href="#home">
+      <span class="brand-mark">P</span>
+      <span>
+        <strong>PM &amp; AI PM Handbook</strong>
+        <em>2026 Edition</em>
+      </span>
+    </a>
+    <nav id="nav"></nav>
+    <div class="side-foot">
+      <a href="#about">About &amp; disclaimer</a>
+      <a href="https://github.com/m0k0ut/ai-product-manager-handbook" target="_blank" rel="noopener">View on GitHub ↗</a>
+    </div>
+  </aside>
+
+  <!-- main view -->
+  <main id="main">
+    <div id="view"></div>
+  </main>
+
+  <!-- search modal -->
+  <div id="search-modal" aria-hidden="true">
+    <div class="search-box" role="dialog" aria-modal="true" aria-label="Search the handbook">
+      <div class="search-field">
+        <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M21 21l-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input id="search-input" type="text" placeholder="Search chapters, sections, and glossary terms…" autocomplete="off" spellcheck="false" />
+        <button id="search-close" class="kbd-esc">Esc</button>
+      </div>
+      <div id="search-results"></div>
+      <div class="search-hints">
+        <span><span class="kbd">↑</span><span class="kbd">↓</span> navigate</span>
+        <span><span class="kbd">↵</span> open</span>
+        <span><span class="kbd">esc</span> close</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
