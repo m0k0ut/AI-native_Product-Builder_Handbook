@@ -2,6 +2,8 @@
 
 > A practical, end-to-end guide to modern **product management** — and the new craft of **AI product management**. 2026 edition.
 
+### 🔗 Read it live → https://m0k0ut.github.io/ai-product-manager-handbook/
+
 [![Read online](https://img.shields.io/badge/read-online-5e5ce6.svg)](https://m0k0ut.github.io/ai-product-manager-handbook/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Edition](https://img.shields.io/badge/edition-2026-blue.svg)](https://m0k0ut.github.io/ai-product-manager-handbook/)
