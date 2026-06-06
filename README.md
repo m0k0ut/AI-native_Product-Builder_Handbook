@@ -2,15 +2,18 @@
 
 > A practical, end-to-end guide to modern **product management** — and the new craft of **AI product management**. 2026 edition.
 
+[![Read online](https://img.shields.io/badge/read-online-5e5ce6.svg)](https://m0k0ut.github.io/ai-product-manager-handbook/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Edition](https://img.shields.io/badge/edition-2026-blue.svg)](AI-PM-Handbook.md)
-[![Made with Markdown](https://img.shields.io/badge/made%20with-Markdown-1f425f.svg)](AI-PM-Handbook.md)
+[![Edition](https://img.shields.io/badge/edition-2026-blue.svg)](https://m0k0ut.github.io/ai-product-manager-handbook/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 
 **10 parts · 30 chapters · 2 glossaries** — everything from the fundamentals of the PM role to
 shipping, evaluating, and governing AI products built on LLMs.
 
-### 👉 [Read the full handbook →](AI-PM-Handbook.md)
+### 📖 [Read it online →](https://m0k0ut.github.io/ai-product-manager-handbook/)
+
+A fast, mobile-friendly reader with instant search and a full glossary. Prefer plain text? Read the
+[Markdown version](AI-PM-Handbook.md).
 
 ---
 
