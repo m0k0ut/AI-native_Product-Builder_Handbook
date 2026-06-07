@@ -6,6 +6,9 @@ Thumbs.db
 .idea/
 .vscode/
 
+# No Track
+no_track/
+
 # Python
 __pycache__/
 *.pyc
