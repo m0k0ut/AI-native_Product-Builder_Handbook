@@ -44,9 +44,9 @@ def main():
 
     # title / subtitle / stats (clean, fixed values for the hero)
     meta = {
-        "title": "The PM & AI PM Handbook",
+        "title": "The AI-native Product Builder's Handbook",
         "edition": "2026 Edition",
-        "subtitle": "A practical guide to modern product thinking for PMs and AI PMs.",
+        "subtitle": "A practical guide to modern product thinking for the AI-native Product Manager & Builder.",
         "stats": "10 Parts · 30 Chapters · 2 Glossaries",
     }
 

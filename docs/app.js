@@ -1,4 +1,4 @@
-/* The PM & AI PM Handbook — app logic (vanilla, no framework) */
+/* The AI-native Product Builder's Handbook — app logic (vanilla, no framework) */
 (function () {
   "use strict";
   var H = window.HANDBOOK;
@@ -175,7 +175,7 @@
 
     setActiveNav(pageId);
     document.body.classList.remove("nav-open");
-    document.title = (pageId === "home" ? "The PM & AI PM Handbook" : page.title + " · PM & AI PM Handbook");
+    document.title = (pageId === "home" ? "The AI-native Product Builder's Handbook" : page.title + " · AI-native Builder's Handbook");
 
     if (page.kind === "glossary") wireGlossary();
 

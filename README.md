@@ -1,6 +1,6 @@
-# 📘 The PM & AI PM Handbook
+# 📘 The AI-native Product Builder's Handbook
 
-> A practical, end-to-end guide to modern **product management** — and the new craft of **AI product management**. 2026 edition.
+> A practical, end-to-end guide to modern **product management** — and the craft of the **AI-native Product Builder**: an AI PM who also executes hands-on with AI tooling. 2026 edition.
 
 ### 🔗 Read it live → https://m0k0ut.github.io/ai-product-manager-handbook/
 
@@ -10,7 +10,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 
 **10 parts · 30 chapters · 2 glossaries** — everything from the fundamentals of the PM role to
-shipping, evaluating, and governing AI products built on LLMs.
+building, shipping, evaluating, and governing AI products built on LLMs.
 
 ### 📖 [Read it online →](https://m0k0ut.github.io/ai-product-manager-handbook/)
 
@@ -21,6 +21,10 @@ A fast, mobile-friendly reader with instant search and a full glossary. Prefer p
 
 ## Why this handbook
 
+- **Built for AI-native Product Builders.** Most PM books stop at *managing*. This handbook's north
+  star is the **AI-native Product Builder** — an AI PM who also executes hands-on with AI tooling —
+  with recurring **Builder's Move** callouts showing how to prototype, eval, and ship yourself, not
+  just spec it.
 - **Two crafts, one resource.** The first half is a complete grounding in classic product
   management; the second half goes deep on AI PM — where products built on probabilistic systems
   change how you discover, build, measure, and ship.
@@ -43,7 +47,7 @@ A fast, mobile-friendly reader with instant search and a full glossary. Prefer p
 | **07 · Building AI Products in Practice** | Lifecycle, build-vs-buy, evals, guardrails, cost | 5 chapters |
 | **08 · Responsible AI & Ethics** | Bias, transparency, privacy, regulation | 2 chapters |
 | **09 · AI Product Management Glossary** | Modern AI terminology | Agent → Zero-Shot |
-| **10 · Career Path & Resources** | Becoming an AI PM, books, courses, communities | 2 chapters |
+| **10 · Career Path & Resources** | Becoming an AI-native Product Builder, books, courses, communities | 2 chapters |
 
 ## How to read it
 
@@ -51,7 +55,8 @@ A fast, mobile-friendly reader with instant search and a full glossary. Prefer p
 - **Transitioning into AI?** Skim Parts 1–3, then start seriously from
   [Part 4](AI-PM-Handbook.md#part-4--introduction-to-ai-product-management); spend most time on
   Parts [6](AI-PM-Handbook.md#part-6--generative-ai--llms-deep-dive) and
-  [7](AI-PM-Handbook.md#part-7--building-ai-products-in-practice) — the practical AI playbooks.
+  [7](AI-PM-Handbook.md#part-7--building-ai-products-in-practice) — the practical AI playbooks, where
+  the **Builder's Move** callouts live.
 - **Need a quick reference?** Jump to the
   [PM glossary](AI-PM-Handbook.md#part-3--product-management-glossary) or the
   [AI glossary](AI-PM-Handbook.md#part-9--ai-product-management-glossary).

@@ -1,9 +1,10 @@
-# The PM & AI PM Handbook
+# The AI-native Product Builder's Handbook
 
-**The 2026 Edition** — *A practical guide to modern product thinking for PMs and AI PMs.*
+**The 2026 Edition** — *A practical guide to modern product thinking for the AI-native Product Manager & Builder.*
 
 **10 Parts · 30 Chapters · 2 Glossaries**, spanning classic Product Management and modern
-AI Product Management.
+AI Product Management — building toward one north star: the **AI-native Product Builder**, an AI
+Product Manager who also executes hands-on with AI tooling (defined in Chapter 10).
 
 ---
 
@@ -27,9 +28,9 @@ imply endorsement, sponsorship, or affiliation.
 
 ## How to use this handbook
 
-This handbook is designed for anyone learning product management — from beginners curious about the role, to working PMs transitioning into AI-powered products. It serves two purposes at once: a teaching guide you can read end-to-end, and a reference you return to whenever you encounter an unfamiliar term.
+This handbook is designed for anyone learning product management — from beginners curious about the role, to working PMs transitioning into AI-powered products, to those aiming to become **AI-native Product Builders**: AI Product Managers who also execute hands-on with AI tooling. It serves two purposes at once: a teaching guide you can read end-to-end, and a reference you return to whenever you encounter an unfamiliar term.
 
-The first half builds your foundation in traditional PM — the role, the frameworks, the vocabulary. The second half goes deep into AI Product Management: how products built on probabilistic systems differ, how to think about data and models, how to ship LLM-powered features, how to evaluate AI quality, and how to navigate the ethics and regulation landscape.
+The first half builds your foundation in traditional PM — the role, the frameworks, the vocabulary. The second half goes deep into AI Product Management: how products built on probabilistic systems differ, how to think about data and models, how to ship LLM-powered features, how to evaluate AI quality, and how to navigate the ethics and regulation landscape. Throughout the practical chapters, **BUILDER'S MOVE** callouts show how an AI-native Product Builder would get hands-on — executing with AI tooling rather than stopping at the spec.
 
 **THREE WAYS TO READ THIS**
 
@@ -83,7 +84,7 @@ AI is evolving fast. Specific model names, pricing, and benchmarks will change. 
   - [Chapter 28 — Privacy, IP & Regulation](#chapter-28--privacy-ip--regulation)
 - [Part 9 — AI Product Management Glossary](#part-9--ai-product-management-glossary)
 - [Part 10 — Career Path & Resources](#part-10--career-path--resources)
-  - [Chapter 29 — Becoming an AI Product Manager](#chapter-29--becoming-an-ai-product-manager)
+  - [Chapter 29 — Becoming an AI-native Product Builder](#chapter-29--becoming-an-ai-native-product-builder)
   - [Chapter 30 — Learning Resources](#chapter-30--learning-resources)
 
 ---
@@ -731,6 +732,14 @@ That probabilistic nature changes everything downstream. It changes how you scop
 
 An AI PM is responsible for shipping intelligent systems that users actually want to use, can reasonably trust, and produce business value — while navigating the fact that the system itself will keep changing and surprising you.
 
+**FROM AI PM TO AI-NATIVE PRODUCT BUILDER**
+
+This handbook teaches the craft of the **AI-native Product Manager** — the modern AI PM who thinks natively in probabilistic systems, evals, and model trade-offs (used interchangeably with "AI PM" throughout). But it aims one step further, at the identity this era increasingly rewards: the **AI-native Product Builder**.
+
+> **AI-native Product Builder = AI-native Product Manager + high execution leverage from AI tooling.**
+
+An AI-native Product Builder goes the extra mile in execution — using AI tooling to prototype, build, and ship, not just to define and manage. They write the eval harness themselves, stand up the RAG prototype over a weekend, and wire the agent by hand, because in the AI era the distance from idea to working artifact has collapsed. That execution leverage — turning judgment into shipped artifacts — is the differentiator this handbook is built to give you.
+
 ### The four flavors of AI products
 
 AI shows up in products in several distinct shapes. Understanding which kind of AI product you're building matters because the playbook differs.
@@ -817,6 +826,10 @@ AI products are stacks: a foundation model at the bottom, prompts and orchestrat
 ### Ethical awareness as a default
 
 AI products fail in ethically loaded ways: biased outputs, privacy leaks, misinformation, displacement. AI PMs don't outsource ethics to a separate "responsible AI team"; they integrate ethical thinking into product decisions from day one. Part 8 of this handbook covers this in depth.
+
+### Build it yourself when you can
+
+The AI-native Product Builder doesn't wait for an engineer to test an idea. When the distance from idea to working artifact is an afternoon with an AI IDE, an API key, and a notebook, build the throwaway version yourself — the prompt, the eval harness, the RAG prototype, the small agent. Hands-on contact with the real system produces judgment no spec or demo can. This is the habit that turns an AI-native Product Manager into an AI-native Product *Builder*.
 
 **A USEFUL DAILY QUESTION**
 
@@ -1146,6 +1159,10 @@ Breaking a complex task into multiple smaller LLM calls, where the output of one
 
 Treat prompts like product code. Version them, test them, write them in the eval set, and review changes with care. A one-line change to a prompt can shift the entire product's behavior — for better or worse.
 
+**BUILDER'S MOVE**
+
+Don't hand a prompt spec to someone else and wait. Open the model's playground or an AI IDE (Cursor, a notebook, the raw API) and iterate on the real prompt yourself — change one variable at a time, keep the versions that win, and hold a few adversarial inputs on hand. An hour of hands-on prompting teaches you more about the model's edges than a week of reading about prompt patterns.
+
 ## Chapter 18 — Retrieval-Augmented Generation (RAG)
 
 RAG is one of the most important patterns in modern AI products. The idea is simple: instead of relying on the model's training data alone, you fetch relevant information from a knowledge source at query time and stuff it into the prompt. The model then generates an answer grounded in that retrieved context.
@@ -1206,6 +1223,10 @@ RAG is excellent for factual Q&A and document grounding. It's less useful when:
 **PM CHECKLIST FOR RAG PRODUCTS**
 
 When does retrieval fail? What does the model do when the right document isn't found? How fresh is the index? Can users see the sources? What happens when sources contradict each other? These are the questions that separate a demo from a real product.
+
+**BUILDER'S MOVE**
+
+Stand up a throwaway RAG prototype over a corpus you actually know — a folder of your own docs, a wiki export — using an off-the-shelf framework and a vector store you can spin up in an afternoon. Feel where retrieval breaks (chunking, embedding choice, the long tail of queries) with your own hands before you write a single requirement. The failure modes you discover yourself are the ones you'll design around well.
 
 ## Chapter 19 — Fine-Tuning & Model Customization
 
@@ -1299,6 +1320,10 @@ Agents often need to remember things across turns or sessions. Memory comes in s
 **PM PRINCIPLES FOR AGENTS**
 
 Start narrow. Make the smallest agent that adds real value. Constrain the action space — fewer tools, smaller scope. Insist on observability — you must be able to see every step. Add human checkpoints for irreversible actions. Treat agents as a long-term capability investment, not a quarter-end demo.
+
+**BUILDER'S MOVE**
+
+Wire a small agent yourself: one task you do every week, two or three tools, a real framework. Watch it loop, stall, and call the wrong tool — and you'll write guardrails and scope limits from lived experience instead of theory. An AI-native Product Builder earns their intuition for what agents can and can't do reliably by shipping one, even a janky one.
 
 ## Chapter 21 — Multimodal AI
 
@@ -1490,6 +1515,10 @@ A pragmatic sequencing for most product teams:
 
 Watch out for: "We need to own the model" without a clear cost or quality justification. "Open source is free" — it's not, you pay in engineering time and GPUs. "We need to fine-tune" before the team has even tried serious prompt engineering. "We need to train our own" almost ever.
 
+**BUILDER'S MOVE**
+
+Before the build-vs-buy meeting, spend a day building the thinnest real version against an API. A working prototype converts an abstract debate into concrete readings — actual cost per call, latency, and quality on your own data — and an AI-native Product Builder brings that evidence to the table instead of a slide full of assumptions.
+
 ## Chapter 24 — Evaluations (Evals) — The PM's Best Friend
 
 If there is one practice that separates good AI products from forgettable ones, it is evaluation. Evals are the systematic measurement of how well your AI system performs. Without them, every change is a vibe check; with them, you can iterate with confidence, compare options, and catch regressions before users do.
@@ -1543,6 +1572,10 @@ What you measure depends on the task. Common patterns:
 **THE EVAL DISCIPLINE**
 
 Most teams under-invest in evals because they're tedious to build and the benefits are invisible. The teams who win in AI invest 30–50% of their AI engineering time in evaluation infrastructure. As the PM, fight for this investment. It is the difference between shipping by gut feel and shipping with confidence.
+
+**BUILDER'S MOVE**
+
+Write the eval harness yourself. Twenty to thirty real cases in a notebook, two or three models scored against them, results you can re-run on every prompt or model change. This is the single highest-leverage thing an AI-native Product Builder does with their own hands — and the rarest skill in the field. Don't delegate the thing that decides whether you ship.
 
 ## Chapter 25 — Guardrails & Safety
 
@@ -1837,6 +1870,8 @@ This glossary covers the language of modern AI — from foundational ML concepts
 - **Agent** — An AI system that can take actions in an environment to accomplish goals — typically by calling tools, executing code, or making API calls based on its reasoning. The defining shift from chatbots: agents do things, not just say things.
 - **Agentic Workflow** — A multi-step process where an LLM plans, acts, observes results, and iterates — as opposed to a single prompt-and-response. Examples: research assistants that browse and synthesize, coding agents that write and test, deep research tools.
 - **AGI (Artificial General Intelligence)** — A hypothetical AI system with human-level cognitive abilities across virtually all domains. Distinct from narrow AI, which is specialized. Definitions vary widely and the term is contested.
+- **AI-native Product Builder** — An AI-native Product Manager who goes the extra mile in execution, using AI tooling to prototype, build, and ship — not just to define and manage. In formula form: AI-native Product Builder = AI-native Product Manager + high execution leverage from AI tooling. The aspirational identity this handbook is built around.
+- **AI-native Product Manager** — The modern AI Product Manager this handbook teaches: one who thinks natively in probabilistic systems, evals, and model trade-offs rather than treating AI as a bolt-on. Used interchangeably with "AI PM" here; add hands-on execution with AI tooling and you get an AI-native Product Builder.
 - **Alignment** — The field and practice of making AI systems behave in accordance with human values and intentions. Includes technical alignment (does the model do what we asked?) and broader questions (whose values?).
 - **Attention** — The mechanism in transformer models that lets the network weigh which tokens in the input matter most for predicting the next token. The conceptual breakthrough behind modern LLMs ("Attention Is All You Need," 2017).
 
@@ -2012,12 +2047,12 @@ The best AI PMs in five years will be the ones who started building today — no
 
 **IN THIS PART**
 
-29. Becoming an AI Product Manager
+29. Becoming an AI-native Product Builder
 30. Learning Resources
 
-## Chapter 29 — Becoming an AI Product Manager
+## Chapter 29 — Becoming an AI-native Product Builder
 
-If you've read this far, you have a stronger conceptual foundation than most people calling themselves AI PMs on LinkedIn. But knowing the vocabulary isn't the same as doing the work. This chapter is about closing that gap — turning understanding into the kind of demonstrated capability that gets you hired.
+If you've read this far, you have a stronger conceptual foundation than most people calling themselves AI PMs on LinkedIn. But knowing the vocabulary isn't the same as doing the work — and the destination isn't just the AI PM title, it's becoming an **AI-native Product Builder** who executes with AI tooling, not just talks about it. This chapter is about closing that gap — turning understanding into the kind of demonstrated, hands-on capability that gets you hired.
 
 ### Paths into AI Product Management
 
