@@ -2,17 +2,17 @@
 
 > A practical, end-to-end guide to modern **product management** — and the craft of the **AI-native Product Builder**: an AI PM who also executes hands-on with AI tooling. 2026 edition.
 
-### 🔗 Read it live → https://m0k0ut.github.io/ai-product-manager-handbook/
+### 🔗 Read it live → https://m0k0ut.github.io/AI-native_Product-Builder_Handbook/
 
-[![Read online](https://img.shields.io/badge/read-online-5e5ce6.svg)](https://m0k0ut.github.io/ai-product-manager-handbook/)
+[![Read online](https://img.shields.io/badge/read-online-5e5ce6.svg)](https://m0k0ut.github.io/AI-native_Product-Builder_Handbook/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Edition](https://img.shields.io/badge/edition-2026-blue.svg)](https://m0k0ut.github.io/ai-product-manager-handbook/)
+[![Edition](https://img.shields.io/badge/edition-2026-blue.svg)](https://m0k0ut.github.io/AI-native_Product-Builder_Handbook/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 
 **10 parts · 30 chapters · 2 glossaries** — everything from the fundamentals of the PM role to
 building, shipping, evaluating, and governing AI products built on LLMs.
 
-### 📖 [Read it online →](https://m0k0ut.github.io/ai-product-manager-handbook/)
+### 📖 [Read it online →](https://m0k0ut.github.io/AI-native_Product-Builder_Handbook/)
 
 A fast, mobile-friendly reader with instant search and a full glossary. Prefer plain text? Read the
 [Markdown version](AI-PM-Handbook.md).
