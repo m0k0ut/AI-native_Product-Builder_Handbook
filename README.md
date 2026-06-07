@@ -70,6 +70,33 @@ Found a gap, an error, or something that's gone out of date? **Issues and pull r
 welcome.** Clear, well-scoped contributions that improve accuracy or add useful examples are
 especially appreciated.
 
+**How the project is built**
+
+- [`AI-PM-Handbook.md`](AI-PM-Handbook.md) is the single source of truth — make your content edits there.
+- The reader under [`docs/`](docs/) is **generated**: [`scripts/build_site.py`](scripts/build_site.py)
+  parses the Markdown into `docs/content.js`. Don't hand-edit `docs/content.js` — it's overwritten on
+  every build.
+- After editing, rebuild and commit the regenerated `docs/` alongside your Markdown change:
+
+  ```bash
+  pip install markdown            # the build's only dependency
+  python3 scripts/build_site.py   # regenerates docs/content.js
+  ```
+
+**Formatting the parser depends on** (it's strict — a wrong dash silently drops content):
+
+- Parts use `# Part N — Title` and chapters `## Chapter N — Title` — that's an em-dash (`—`), not a
+  hyphen. Glossary terms use `- **Term** — definition`.
+- If you add, remove, or renumber a chapter, keep the Table of Contents, the **IN THIS PART** list,
+  any prose "Chapter N" cross-references, and the chapter-count lines all in sync.
+
+**Using Claude Code?** Two project skills ship in [`.claude/skills/`](.claude/skills/) and automate the
+work above:
+
+- **`/new-chapter`** — inserts a chapter in the exact format the parser needs and keeps the Table of
+  Contents, the IN THIS PART list, chapter cross-references, and every chapter-count string in sync.
+- **`/publish`** — runs the build, previews the site locally, and stages `docs/` for your commit.
+
 ## ⭐ Star this repo
 
 If the handbook helps you, consider giving it a star — it helps more product managers find it.
