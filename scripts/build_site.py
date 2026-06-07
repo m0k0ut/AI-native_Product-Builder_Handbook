@@ -46,7 +46,7 @@ def main():
     meta = {
         "title": "The AI-native Product Builder's Handbook",
         "edition": "2026 Edition",
-        "subtitle": "A practical guide to modern product thinking for the AI-native Product Manager & Builder.",
+        "subtitle": "A practical guide to modern product management — and the craft of the AI-native Product Builder.",
         "stats": "10 Parts · 30 Chapters · 2 Glossaries",
     }
 
