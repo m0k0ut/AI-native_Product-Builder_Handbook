@@ -180,6 +180,8 @@ a:hover { text-decoration: underline; }
 }
 .side-foot a { font-size: 13px; color: var(--text-3); }
 .side-foot a:hover { color: var(--accent); text-decoration: none; }
+.side-by { font-size: 13px; color: var(--text-3); margin-top: 6px; line-height: 1.45; }
+.side-by a { font-weight: 600; }
 
 /* ---------- prose ---------- */
 .prose { font-size: 17px; color: var(--text); }
@@ -284,6 +286,10 @@ a:hover { text-decoration: underline; }
 }
 .hero .lede { font-size: clamp(18px, 3.6vw, 23px); color: var(--text-2); max-width: 660px; margin: 0 auto 14px; line-height: 1.5; }
 .hero .stats { font-size: 15px; color: var(--text-3); font-weight: 500; }
+.hero-by { font-size: 15px; color: var(--text-3); margin-top: 12px; }
+.hero-by a { color: var(--text-2); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--border-strong); transition: color 0.18s, border-color 0.18s; }
+.hero-by a:hover { color: var(--accent); border-color: var(--accent); }
+.hero-by-handle { color: var(--text-3); }
 .hero-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
 .btn {
   display: inline-flex; align-items: center; gap: 8px;

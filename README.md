@@ -101,6 +101,11 @@ work above:
 
 If the handbook helps you, consider giving it a star — it helps more product managers find it.
 
+## Built by
+
+**Mohan Koushik Tupakula** — [@m0k0ut](https://github.com/m0k0ut) on GitHub.
+Issues, ideas, and pull requests are welcome — see [Contributing](#contributing).
+
 ## License
 
 Released under the [MIT License](LICENSE) — free to use, share, and adapt.
