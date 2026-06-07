@@ -40,4 +40,4 @@ static web reader and deployed to GitHub Pages. It's a content pipeline, not an 
 ## Deploy
 - GitHub Pages serves from `main` branch `/docs`. Live: https://m0k0ut.github.io/AI-native_Product-Builder_Handbook/
   (the Pages path is case-sensitive). The "Built by Mohan Koushik Tupakula (@m0k0ut)" credit in the
-  hero/footer/README is intentional. Keep the original source author's name/PDF out of tracked files.
+  hero/footer/README is intentional.
