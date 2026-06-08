@@ -1,10 +1,12 @@
 # The AI-native Product Builder's Handbook
 
-**The 2026 Edition** — *A practical guide to modern product thinking for the AI-native Product Manager & Builder.*
+**The 2026 Edition** — *A practical guide to modern product management — and the craft of the AI-native Product Builder.*
 
 **10 Parts · 30 Chapters · 2 Glossaries**, spanning classic Product Management and modern
 AI Product Management — building toward one north star: the **AI-native Product Builder**, an AI
 Product Manager who also executes hands-on with AI tooling (defined in Chapter 10).
+
+Built by [Mohan Koushik Tupakula](https://github.com/m0k0ut) · @m0k0ut.
 
 ---
 
