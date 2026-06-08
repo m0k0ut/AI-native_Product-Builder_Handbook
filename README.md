@@ -76,11 +76,13 @@ especially appreciated.
 - The reader under [`docs/`](docs/) is **generated**: [`scripts/build_site.py`](scripts/build_site.py)
   parses the Markdown into `docs/content.js`. Don't hand-edit `docs/content.js` — it's overwritten on
   every build.
-- After editing, rebuild and commit the regenerated `docs/` alongside your Markdown change:
+- You can just edit the Markdown and push: on every push to `main`, a GitHub Actions workflow
+  ([`.github/workflows/build-site.yml`](.github/workflows/build-site.yml)) rebuilds `docs/content.js`
+  and commits it back — even for edits made in GitHub's web UI. To preview locally before pushing:
 
   ```bash
-  pip install markdown            # the build's only dependency
-  python3 scripts/build_site.py   # regenerates docs/content.js
+  pip install -r requirements.txt
+  python3 scripts/build_site.py     # regenerates docs/content.js; serve with scripts/preview_server.py
   ```
 
 **Formatting the parser depends on** (it's strict — a wrong dash silently drops content):

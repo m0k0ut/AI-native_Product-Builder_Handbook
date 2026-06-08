@@ -1,0 +1,45 @@
+name: Build site
+
+# Keep docs/content.js in sync with the handbook for ALL edits — including
+# direct edits, GitHub web-UI edits, and merged PRs that the local .claude
+# hooks don't cover. Rebuilds content.js and commits it back to main/docs,
+# which triggers the GitHub Pages redeploy.
+on:
+  push:
+    branches: [main]
+    paths:
+      - AI-PM-Handbook.md
+      - scripts/build_site.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Rebuild docs/content.js from the handbook
+        run: python3 scripts/build_site.py
+      - name: Commit the rebuild if content.js changed
+        run: |
+          if [ -n "$(git status --porcelain docs/content.js)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add docs/content.js
+            git commit -m "Rebuild docs/content.js from AI-PM-Handbook.md [skip ci]"
+            git push origin HEAD:main
+            echo "Pushed a regenerated docs/content.js."
+          else
+            echo "content.js already in sync — nothing to do."
+          fi

@@ -1,0 +1,4 @@
+# Build dependency for scripts/build_site.py (used locally and by the
+# Build site GitHub Actions workflow). Pinned to avoid a surprise HTML diff
+# from a future major release.
+markdown>=3,<4

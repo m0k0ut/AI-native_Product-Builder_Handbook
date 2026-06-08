@@ -41,3 +41,8 @@ static web reader and deployed to GitHub Pages. It's a content pipeline, not an 
 - GitHub Pages serves from `main` branch `/docs`. Live: https://m0k0ut.github.io/AI-native_Product-Builder_Handbook/
   (the Pages path is case-sensitive). The "Built by Mohan Koushik Tupakula (@m0k0ut)" credit in the
   hero/footer/README is intentional.
+- **CI auto-build:** a push that changes `AI-PM-Handbook.md` or `scripts/build_site.py` triggers
+  `.github/workflows/build-site.yml`, which rebuilds `docs/content.js` and commits it back (as
+  `github-actions[bot]`, `[skip ci]`). So editing the Markdown — even via GitHub's web UI — is enough;
+  the local PostToolUse hook just keeps Claude's edits in sync ahead of CI. (After a CI rebuild, `git
+  pull` before your next push.)
